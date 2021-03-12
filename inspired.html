@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--javascript-->
+	<meta charset='utf-8'>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<!--css-->
+	<link rel="stylesheet" type="text/css" href="styling.css"></link>
+<title>Inspired</title>
+</head>
+
+<body>
+<section>
+	</section>
+
+<div class="blink"></div>
+
+<style>
+
+.blink {
+    animation: 5s infinite blink;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    z-index: 5;
+    background-color: black;
+}
+
+@keyframes blink {
+    0%, 15% {
+        opacity: 0;
+    }
+    16%, 100% {
+        opacity: 1;
+    }
+}
+
+  section {
+	width: 105%;
+	height: 110vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #1e6d7d, #349963, #e89700, #b01371, #ad0054, #1e6d7d);
+	background-size: 400% 400%;
+	position: relative;
+	filter: blur(50px);
+	animation: animate 10s ease-in-out infinite;
+	z-index: 1;
+}
+
+@keyframes animate {
+
+	0%
+	{
+		background-position: 0 50%;
+	}
+
+	50% 
+	{
+		background-position: 100% 50%;
+	}
+
+	100%
+	{
+		background-position: 0 50%;
+
+	}
+}
+
+
+        </style>
+        
+        
+
+</body>
+
+<script>document.body.style.backgroundColor = "black";
+</script>
+
+</html>
+
+
+
+        
+   

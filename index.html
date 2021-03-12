@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--javascript-->
+	<meta charset='utf-8'>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<!--css-->
+	<link rel="stylesheet" type="text/css" href="styles.css"></link>
+
+<title>Conscious</title>	
+
+</head>
+
+<body>
+
+	<!--holes-->
+	<div id="hole1"></div>
+	<div id="hole2"></div>
+	<div id="hole3"></div>
+
+	<!--dust-->
+	<section>
+		<h2></h2>
+	</section>
+	<!--progress-->
+
+	<!-- music not automatic yet, fucking chrome -->
+	<embed src="/project1/wind.mp3" loop="true" autostart="true" width="2" height="0">
+
+
+	<!-- invisible buttons on holes -->
+	<div style="">
+   		<a href="step1-1.html" style="width: 0px; 
+    	height: 30px; 
+    	border-left: 28px solid transparent; 
+    	border-right: 28px solid transparent; 
+    	border-top: 20px solid yellow;
+    	opacity: 0;
+    	display: flex;
+    	position: relative;
+    	vertical-align: middle;
+		left: 44vh;
+		top: -83vh;"></a>  
+	</div>
+
+	<div style="">
+   		<a href="step2-1.html" style="width: 0px; 
+    	height: 30px; 
+    	border-left: 28px solid transparent; 
+    	border-right: 28px solid transparent; 
+    	border-top: 20px solid yellow;
+    	opacity: 0;
+    	display: flex;
+    	position: relative;
+    	vertical-align: middle;
+		left: 77vh;
+		top: -30vh;"></a>  
+	</div>
+
+<div style="">
+   		<a href="step2-2.html" style="width: 0px; 
+    	height: 30px; 
+    	border-left: 28px solid transparent; 
+    	border-right: 28px solid transparent; 
+    	border-top: 20px solid yellow;
+    	opacity: 0;
+    	display: flex;
+    	position: relative;
+    	vertical-align: middle;
+		left: 136vh;
+		top: -80vh;"></a>  
+	</div>
+
+
+</body>
+	
+	<!--javascript-->
+	<script type="text/javascript">
+		function createBubble(){
+	const section = document.querySelector('section')
+	const createElement = document.createElement('span')
+	var size = Math.random() * 60;
+
+	createElement.style.width = 20 + size + 'px';
+	createElement.style.height = 20 + size + 'px';
+	createElement.style.left = Math.random() * innerWidth + "px";
+	section.appendChild(createElement);
+
+	setTimeout(() => {
+		createElement.remove()
+
+	},4000)
+}
+
+setInterval(createBubble, 50)
+	</script>
+
+
+	<script type="text/javascript" src="main.js"></script>
+
+</html>
+
+
+
+
+
+<!-- old code
+<div class="dusty">
+		<div class="dust"></div>
+		<div class="dust"></div>
+		<div class="dust"></div>
+		<div class="dust"></div>
+		<div class="dust"></div>
+		<div class="dust"></div>
+		<div class="dust"></div>
+		<div class="dust"></div>
+		<div class="dust"></div>
+		<div class="dust"></div>
+</div>
+-->
